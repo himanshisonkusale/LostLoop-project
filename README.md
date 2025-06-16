@@ -46,3 +46,17 @@ LostLoop is ideal for:
 - Corporate Offices  
 - Conferences & Public Events  
 - Community Spaces
+
+## 👨‍💻 Team Members / Contributors
+
+- ⚙️ **Sachi Jha**  
+  Backend Development – Data Handling, Google Maps Integration, JSON Management
+
+- 💡 **Himanshi Sonkusale**  
+  Flask App Routing & Forms Setup, Frontend CSS Styling, Integration & Debugging
+
+- 🎨 **Vidishaa Deo**  
+  HTML Page Structure, CSS Styling, UI Layouts & Content Blocks
+
+- 🧠 **Matangi Sharma**  
+  UI/UX Design – Screen Flow, Element Positioning, Aesthetic Styling
