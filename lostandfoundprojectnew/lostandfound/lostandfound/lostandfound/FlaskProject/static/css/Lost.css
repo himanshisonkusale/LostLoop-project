@@ -1,0 +1,359 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Franklin', sans-serif;
+  background: linear-gradient(to top, #e9e9e9 18.18%, #cde6ff 43.58%, #90d0ff 53.53%); 
+  min-height: 100vh;
+}
+
+.page-container {
+  max-width: 1512px; 
+  margin: 0 auto;
+  padding-bottom: 50px; 
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  color: #494d4e;
+  font-family: 'Libre Franklin', sans-serif; 
+  font-size: 24px;
+  line-height: 29.088px;
+  margin-bottom: 10px;
+}
+
+.input-field, .textarea-field, .custom-select-lookalike {
+  background-color: #ffffff; 
+  border: 2px solid #d7e3e6;
+  border-radius: 20px;
+  padding: 14px 21px;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: #494d4e;
+  width: 100%;
+}
+
+.input-field::placeholder, .textarea-field::placeholder {
+  color: #8f9495;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 20px;
+}
+
+
+.site-header {
+  background-color: #0a3960; 
+  height: 119px; 
+  display: flex;
+  align-items: center;
+  padding: 0 40px; 
+}
+
+.header-content {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  width: 100%;
+}
+
+.header-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  margin-right: 40px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  color: #ffffff;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 27px;
+  line-height: 33.75px;
+  margin-right: 16px;
+}
+
+.user-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.report-form-page-section {
+  padding-top: 14px;
+}
+.main-layout {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 43px;
+  padding-left: 12px; 
+  padding-right: 12px;
+}
+
+.sidebar {
+  width: 347px;
+  height: 832px;
+  background-color: rgba(65, 89, 100, 0.3); 
+  border-radius: 30px;
+  padding: 56px 0px 56px 50px; 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  margin-bottom: 42px;
+}
+.sidebar-nav li:last-child {
+  margin-bottom: 0;
+}
+
+
+.sidebar-nav a, .sidebar-footer-link a {
+  text-decoration: none;
+  color: #0a3960;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 29px;
+  line-height: 36.25px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon {
+  width: 28.75px;
+  height: 28.75px;
+  margin-right: 15px; 
+}
+.sidebar-footer-link .nav-icon { 
+    width: 52.5px;
+    height: 48px;
+    margin-right: 5px; 
+}
+
+
+.form-area-wrapper {
+  flex: 1;
+  min-width: 600px;
+  margin-top: 16px; 
+}
+
+.form-area-outer-bg {
+  background-color: rgba(255, 255, 255, 0.76); 
+  border-radius: 20px; 
+  padding: 44px 38.5px; 
+}
+
+.form-area-inner-bg {
+  background-color: #d0e7ed; 
+  border-radius: 10px; 
+  padding: 52px 40px; 
+  box-sizing: border-box;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  margin-bottom: 40px; 
+}
+
+.form-title {
+  color: #3f5c62;
+  font-family: 'Bowlby One', sans-serif; 
+  font-size: 36px;
+  line-height: 56.39px; 
+  margin: 0;
+  max-width: 463px; 
+}
+
+.form-mascot-image {
+  width: 180px; 
+  height: 133px; 
+  margin-top: -20px; 
+  margin-left: 20px;
+}
+
+.report-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px; 
+}
+
+.reporting-group {
+    width: 255px; 
+    flex-shrink: 0; 
+}
+
+.custom-select-lookalike {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 57px; 
+  width: 255px; 
+}
+
+.select-text {
+  color: #8f9495;
+  font-family: 'Libre Franklin', sans-serif; 
+  font-size: 20px;
+}
+
+.dropdown-icon {
+  width: 51px;
+  height: 40px;
+}
+
+.textarea-field {
+  resize: vertical; 
+  min-height: 57px;
+}
+
+.upload-area {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.upload-area label {
+}
+
+.image-upload-box {
+  background-color: #c8cacf; 
+  border-radius: 20px; 
+  width: 455px; 
+  height: 243px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto; 
+}
+
+.upload-text-main, .upload-text-secondary {
+  color: #000000; 
+  font-family: 'Libre Franklin', sans-serif; 
+  font-size: 24px; 
+  line-height: 29.088px; 
+  margin: 5px 0;
+}
+
+.submit-button {
+  background-color: #51aacb; 
+  border-radius: 50px; 
+  border: none;
+  color: #ffffff;
+  font-family: 'Calistoga', sans-serif;
+  font-size: 28px;
+  line-height: 36.4px; 
+  padding: 17px 0;
+  width: 519px;
+  height: 70px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0 auto; 
+  text-align: center;
+}
+
+
+@media (max-width: 1200px) {
+  .main-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .sidebar {
+    width: 90%;
+    max-width: 400px; 
+    height: auto; 
+    padding: 30px;
+  }
+  .sidebar-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .sidebar-nav li {
+    margin-bottom: 0;
+  }
+  .sidebar-footer-link {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .form-area-wrapper {
+    width: 90%;
+    max-width: 700px;
+    margin-top: 0;
+  }
+  .form-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .form-mascot-image {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .input-field, .textarea-field, .custom-select-lookalike, .submit-button, .image-upload-box {
+    width: 100%;
+  }
+  .reporting-group {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    padding: 0 20px;
+    height: auto;
+    min-height: 80px;
+  }
+  .header-content {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  .header-link {
+    margin-right: 0;
+  }
+  .user-name {
+    font-size: 22px;
+  }
+  .user-avatar {
+    width: 60px;
+    height: 60px;
+  }
+  .form-title {
+    font-size: 28px;
+  }
+  .form-area-outer-bg {
+    padding: 20px;
+  }
+  .form-area-inner-bg {
+    padding: 30px 20px;
+  }
+  .sidebar-nav a, .sidebar-footer-link a {
+    font-size: 24px;
+  }
+  .submit-button {
+    font-size: 24px;
+    height: 60px;
+  }
+}

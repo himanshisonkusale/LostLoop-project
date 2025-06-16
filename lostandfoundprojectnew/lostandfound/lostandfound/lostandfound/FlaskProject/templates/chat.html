@@ -1,0 +1,128 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <title>Chat for Item {{ item.id }}</title>-->
+<!--    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/chat.css') }}">-->
+
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Chat about: {{ item.description }}</h1>-->
+
+<!--    <div style="border: 1px solid #ccc; padding: 10px; max-width: 600px;">-->
+<!--        {% for message in item.messages %}-->
+<!--            <p><strong>{{ message.sender }}:</strong> {{ message.text }} <small>({{ message.timestamp }})</small></p>-->
+<!--        {% else %}-->
+<!--            <p>No messages yet.</p>-->
+<!--        {% endfor %}-->
+<!--    </div>-->
+
+<!--    <form method="post">-->
+<!--        <input type="text" name="sender" placeholder="Your username" required><br><br>-->
+<!--        <textarea name="text" placeholder="Write your message..." rows="3" cols="50" required></textarea><br><br>-->
+<!--        <button type="submit">Send</button>-->
+<!--    </form>-->
+
+<!--    <br><a href="{{ url_for('item_details', item_id=item.id) }}">Back to Item Details</a><br>-->
+<!--    <a href="{{ url_for('home') }}">Back to Home</a>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat for Item {{ item.id }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/chat.css') }}">
+</head>
+<body>
+
+<section id="section-header">
+  <header class="site-header">
+    <nav class="header-nav">
+      <a href="{{ url_for('support') }}" class="nav-link support-link">Support</a>
+
+      <h2 style="color: #FFFFFF; font-size: 19px;">{{username}} </h2>
+      <img src="{{ url_for('static', filename='images/Ellipse 2.svg') }}" alt="User Avatar" class="site-header__avatar">
+    </nav>
+  </header>
+</section>
+
+<section id="section-chat-interface" class="chat-interface-section">
+  <aside class="sidebar">
+    <nav class="sidebar-nav">
+      <ul>
+        <li class="sidebar-nav-item">
+          <a href="{{ url_for('home') }}" class="sidebar-nav-item">
+            <img src="{{ url_for('static', filename='images/2043.png_860 (1) 12.png') }}" alt="Home Icon" class="nav-icon">
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="{{ url_for('search') }}" class="sidebar-nav-item">
+            <img src="{{ url_for('static', filename='images/2043.png_860 (1) 12.png') }}" alt="Search Icon" class="nav-icon">
+            <span>Search</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="{{ url_for('support') }}" class="sidebar-nav-item">
+            <img src="{{ url_for('static', filename='images/2043.png_860 (1) 12.png') }}" alt="Support Icon" class="nav-icon">
+            <span>Support</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- <a href="{{ url_for('homescreen') }}" class="sidebar-nav-itemsidebar-nav-item how-it-helps">
+      <img src="{{ url_for('static', filename='images/Screenshot 2025-06-07 034101 1.png') }}" alt="Help Icon" class="nav-icon">
+      <span>How It Helps</span>
+    </a> -->
+
+    <div class="sidebar-footer-item">
+      <li class="sidebar-footer-item">
+        <a href="{{ url_for('homescreen') }}" class="sidebar-nav-itemsidebar-nav-item how-it-helps">
+          <img src="{{ url_for('static', filename='images/Screenshot 2025-06-07 034101 1.png') }}" alt="" class="nav-icon-large">
+          <span>How It Helps</span>
+        </a>
+      </li>
+    </div>
+  </aside>
+
+
+
+
+
+  <main class="chat-area-outer">
+    <div class="chat-area-inner">
+      <h1 class="chat-title">Chat about: {{ item.description }}</h1>
+
+      <div class="chat-messages" style="border: 1px solid #ccc; padding: 10px; max-width: 600px; margin-bottom: 20px;">
+        {% for message in item.messages %}
+          <p><strong>{{ message.sender }}:</strong> {{ message.text }} <small>({{ message.timestamp }})</small></p>
+        {% else %}
+          <p>No messages yet.</p>
+        {% endfor %}
+      </div>
+
+      <form method="post">
+        <input type="text" name="sender" placeholder="Your username" required><br><br>
+        <textarea name="text" class="message-input-area" placeholder="Write your message..." rows="3" cols="50" required></textarea><br><br>
+        <div class="chat-actions">
+          <button type="submit" class="button button-send">Send</button>
+          <a href="{{ url_for('item_details', item_id=item.id) }}">
+            <button type="button" class="button button-back">Back to details</button>
+          </a>
+        </div>
+      </form>
+
+    </div>
+  </main>
+</section>
+
+</body>
+</html>

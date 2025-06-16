@@ -1,0 +1,400 @@
+body {
+  margin: 0;
+  font-family: 'Hammersmith One', sans-serif;
+  background-color: #e6f5fb;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #003366, #004080);
+  padding: 10px 30px;
+  color: white;
+  height: 60px;
+}
+
+.header-nav-item {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-header__avatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.welcome-text {
+  font-size: 16px;
+}
+
+#section-main {
+  display: flex;
+  height: calc(100vh - 60px);
+  background: linear-gradient(360deg, #e9e9e9 18.18%, #cde6ff 43.58%, #90d0ff 53.53%);
+}
+
+.sidebar {
+  background: #f0f0f0;
+  width: 10px;
+  padding: 20px 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20vh;
+}
+
+.sidebar-nav-item {
+  display: block;
+  color: #1a1a1a;
+  font-weight: 500;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sidebar-footer-link {
+  text-decoration: none;
+  color: #004080;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px;
+}
+
+
+.content-panel {
+  flex: 1;
+  background: linear-gradient(360deg, #e9e9e9 18.18%, #cde6ff 43.58%, #90d0ff 53.53%);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  #section-main {
+    flex-wrap: wrap; 
+    flex-direction: column; 
+    height: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    order: 2; 
+    margin-top: 20px;
+  }
+
+  .content-panel {
+    width: 100%;
+    order: 1; 
+    min-width: unset;
+    padding: 20px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .delete-box {
+    position: fixed;
+    top: 120px; 
+    left: 0;    
+    width: 80px; 
+    height: 50px; 
+    background-color: #303B49; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 10px 10px 0;
+    z-index: 1000; 
+    cursor: pointer;
+  }
+
+  
+  .sidebar {
+    position: fixed;
+    top: 60px; 
+    left: 0;
+    width: 60px;
+    height: 100vh;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  
+  .content-panel {
+    margin-left: 140px; 
+    padding: 20px;
+  }
+}
+
+
+.dialog-outer-container {
+  background-color: #c9effa;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dialog-inner-box {
+  text-align: center;
+}
+
+.dialog-question {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button-yes {
+  background-color: #303B49;
+  color: white;
+  font-style: 'Trispace',sans-serif;
+}
+
+.button-no {
+  background-color: #303B49;
+  color: white;
+  font-style: 'Trispace',sans-serif;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+
+.site-header {
+  background-color: #0a3960;
+  height: 119px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex: 1; 
+  justify-content: right; 
+  padding-right:40px;
+}
+
+.header-nav-item {
+  font-family: 'Hammersmith One', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  font-family: 'Hammersmith One', sans-serif;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 33.75px;
+  color: #ffffff;
+  margin-right: 16px;
+}
+
+.user-avatar {
+  width: 80px; 
+  height: 80px; 
+}
+
+
+.main-layout {
+  display: flex;
+  padding-top: 112px;
+  padding-left: 12px; 
+  padding-right: 12px; 
+  padding-bottom: 58px; 
+  gap: 132px; 
+}
+
+.sidebar {
+  background-color: rgba(65, 89, 100, 0.3); 
+  border-radius: 30px; 
+  width: 347px; 
+  height: 200vh;
+  padding: 56px 0 50px 50px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.sidebar-nav {
+  flex-grow: 1;
+}
+
+.sidebar-nav-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 42px; 
+  font-family: 'Hammersmith One', sans-serif;
+  font-weight: 400;
+  font-size: 29px; 
+  line-height: 36.25px; 
+  color: #0a3960; 
+}
+.sidebar-nav-item:last-child {
+    margin-bottom: 0;
+}
+
+
+.sidebar-nav-item .nav-icon {
+  width: 28.75px; 
+  height: 28.75px; 
+  margin-right: 16px;
+  margin-left: 14px; 
+}
+
+.sidebar-footer-link {
+  display: flex;
+  align-items: center;
+  margin-top: auto; 
+  font-family: 'Hammersmith One', sans-serif;
+  font-weight: 400;
+  font-size: 29px; 
+  line-height: 36.25px; 
+  color: #0a3960; 
+}
+
+.sidebar-footer-link .nav-icon-large {
+  width: 52px; 
+  height: 48px; 
+  margin-right: 4px; 
+}
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .content-panel {
+    padding: 20px;
+  }
+
+  .dialog-buttons {
+    flex-direction: column;
+  }
+
+  .user-info {
+    flex-direction: column;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .dialog-outer-container {
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .dialog-question {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .dialog-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .dialog-outer-container {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .dialog-question {
+    font-size: 14px;
+  }
+
+  .button {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .content-panel {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .dialog-outer-container {
+    margin: auto;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-panel {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dialog-outer-container {
+    margin: auto;
+    width: 95%;
+  
+  }
+}
+
+

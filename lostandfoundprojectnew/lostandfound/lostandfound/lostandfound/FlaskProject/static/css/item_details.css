@@ -1,0 +1,342 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hammersmith One', sans-serif;
+  background: linear-gradient(360deg, #e9e9e9 18.18%, #cde6ff 43.58%, #90d0ff 53.53%);
+  min-height: 100vh;
+}
+
+.page-wrapper {
+  max-width: 1512px;
+  margin: 0 auto;
+  overflow: hidden; 
+}
+
+.button-base {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header-section {
+  background-color: #0a3960;
+}
+
+.site-header {
+  height: 119px; 
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 30px; 
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #ffffff; 
+  font-family: 'Hammersmith One', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.support-link {
+  font-size: 20px;
+  line-height: 25px; 
+  margin-right: 45px;
+}
+
+.name-link {
+  font-size: 27px;
+  line-height: 33.75px; 
+  margin-right: 20px; 
+}
+
+.user-avatar {
+  width: 80px; 
+  height: 80px; 
+  border-radius: 50%; 
+}
+
+
+.dashboard-section .page-wrapper { 
+  padding-top: 14px; 
+  padding-left: 12px; 
+  padding-right: 12px; 
+  padding-bottom: 40px; 
+}
+
+.dashboard-layout {
+  display: flex;
+  gap: 52px; 
+}
+
+.sidebar {
+  width: 347px;
+  height: 832px; 
+  background-color: rgba(65, 89, 100, 0.3); 
+  border-radius: 30px; 
+  padding: 56px 0 0 64px; 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  width:200px;
+}
+
+.sidebar-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 16px; 
+  margin-bottom: 42px; 
+  text-decoration: none;
+  color: #0a3960; 
+  font-family: 'Hammersmith One', sans-serif; 
+  font-weight: 400; 
+  font-size: 29px;
+  line-height: 36.25px;
+}
+.sidebar-nav-item:last-child {
+  margin-bottom: 0;
+}
+
+.nav-icon {
+  width: 28.75px;
+  height: 28.75px; 
+}
+.how-it-helps .nav-icon {
+    width: 52.5px; 
+    height: 48px;
+}
+
+
+.how-it-helps {
+  margin-top: auto; 
+  padding-bottom: 58px; 
+}
+
+.main-content-column {
+  max-width: 700px;    
+  width: 100%; 
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; 
+  margin-top: 27px; 
+}
+
+.item-details-card-wrapper {
+  background-color: rgba(255, 255, 255, 0.76);
+  border-radius: 20px; 
+  width: 880px;
+  height: 778px;
+  padding: 30px 38px;
+  box-sizing: border-box;
+}
+
+.item-details-card-wrapper img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+
+.item-details-card {
+  background-color: #d0e7ed;
+  border-radius: 10px;
+  width: 800px;
+  height: 708px; 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.mark-claimed-button {
+  background-color: #303b49; 
+  border-radius: 30px; 
+  color: #ffffff; 
+  font-family: 'Hammersmith One', sans-serif;
+  font-weight: 400; 
+  font-size: 20px; 
+  line-height: 25px; 
+  border: none;
+  cursor: pointer;
+  width: 404px; 
+  height: 47px; 
+  margin-top: calc(77px - 30px); 
+  margin-bottom: calc(141px - 77px - 47px);
+}
+
+.image-placeholder {
+  background-color: #ffffff;
+  width: 415px; 
+  height: 343px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 26px; 
+}
+
+.image-placeholder-text {
+  color: #000000;
+  font-family: 'Hammersmith One', sans-serif;
+  font-weight: 400; 
+  font-size: 36px; 
+  line-height: 45px; 
+}
+
+.item-info {
+  text-align: left;
+  width: 415px; 
+  margin-bottom: 19px; 
+}
+
+.info-text {
+  color: #000000; 
+  font-family: 'Hammersmith One', sans-serif; 
+  font-weight: 400; 
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0 0 4px 0; 
+}
+.info-text:last-child {
+    margin-bottom: 0;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 27px; 
+  justify-content: center;
+  width: 100%; 
+}
+
+.action-button {
+  background-color: #686d86; 
+  border-radius: 30px;
+  color: #ffffff;
+  font-family: 'Hammersmith One', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  border: none;
+  cursor: pointer;
+  width: 128px;
+  height: 45px;
+}
+
+.map-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.location-map-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 1036px;
+  height: 432px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px; 
+}
+
+
+.location-map-text {
+  align-self: center;
+  color: #000000; 
+  font-family: 'Hammersmith One', sans-serif; 
+  font-weight: 400; 
+  font-size: 36px;
+  line-height: 45px;
+}
+
+
+@media (max-width: 1200px) {
+  .dashboard-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .sidebar {
+    width: 100%;
+    max-width: 500px;
+    height: auto; 
+    padding: 30px;
+  }
+  .how-it-helps {
+    margin-top: 30px;
+    padding-bottom: 0;
+  }
+  .main-content-column {
+    margin-top: 0;
+    width: 100%;
+    align-items: center;
+  }
+  .item-details-card-wrapper, .location-map-card {
+    width: 100%;
+    max-width: 700px; 
+  }
+   .item-details-card, .image-placeholder, .item-info {
+    width: 100% !important; 
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    padding: 0 15px;
+    height: auto;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .header-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .support-link, .name-link {
+    margin-right: 0;
+  }
+  .dashboard-section .page-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .action-buttons {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  .action-button {
+    width: 80%;
+    max-width: 200px;
+  }
+  .item-details-card {
+    padding: 20px;
+  }
+  .mark-claimed-button {
+    width: 80%;
+    max-width: 300px;
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+

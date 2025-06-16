@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>LostLoop | Home</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+  <div class="page-container">
+    <!-- Header -->
+    <section id="section-header">
+      <header class="site-header">
+        <nav class="site-header__nav">
+          <a href="{{ url_for('support') }}" class="site-header__nav-item site-header__nav-item--support">Support</a>
+          <!-- <span class="site-header__user-name">Name</span> -->
+          <h2 style="color: #FFFFFF; font-size: 19px;">{{username}} </h2>
+          <img src="{{ url_for('static', filename='images/Ellipse 2.svg') }}" alt="User Avatar" class="site-header__avatar" style="margin-left: 20px;">
+        </nav>
+      </header>
+    </section>
+
+    <!-- Main -->
+    <section id="section-main" class="main-section-wrapper">
+      <div class="main-content-area">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <nav class="sidebar__nav">
+            <ul class="sidebar__nav-list">
+              <li class="sidebar__nav-item">
+                <a href="{{ url_for('home') }}">
+                  <img src="{{ url_for('static', filename='images/2043.png_860 (1) 12.png') }}" alt="Home icon" class="sidebar__nav-icon">
+                  <span class="sidebar__nav-text">Home</span>
+                </a>
+              </li>
+              <li class="sidebar__nav-item">
+                <a href="{{ url_for('search') }}">
+                  <img src="{{ url_for('static', filename='images/2043.png_860 (1) 12.png') }}" alt="Search icon" class="sidebar__nav-icon">
+                  <span class="sidebar__nav-text">Search</span>
+                </a>
+              </li>
+              <li class="sidebar__nav-item">
+                <a href="{{ url_for('support') }}">
+                  <img src="{{ url_for('static', filename='images/2043.png_860 (1) 12.png') }}" alt="Support icon" class="sidebar__nav-icon">
+                  <span class="sidebar__nav-text">Support</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="sidebar-footer-link">
+            <a href="{{ url_for('homescreen') }}">
+              <img src="{{ url_for('static', filename='images/Screenshot 2025-06-07 034101 1.png') }}" alt="icon" class="nav-icon">
+              <span>How It Helps</span>
+            </a>
+          </div>
+        </aside>
+
+        <!-- Content Panel -->
+        <main class="content-panel">
+          <div class="content-panel__title-group">
+            <img src="{{ url_for('static', filename='images/Screenshot 2025-06-07 012500 1.png') }}" alt="Home icon" class="content-panel__title-icon">
+            <!-- <h1 class="content-panel__title-text">Home</h1> -->
+          </div>
+          <!-- <img src="{{ url_for('static', filename='images/Screenshot 2025-06-07 034225 1.png') }}" alt="Lost and found illustration" class="content-panel__hero-image"> -->
+          <p class="content-panel__tagline">I got you — let’s find your lost stuff with LostLoop.</p>
+          <p class="content-panel__tagline">We’re the loop between what’s lost and what’s found.</p>
+          <h2 class="content-panel__cta-heading">REPORT AN ITEM NOW!</h2>
+          <div class="content-panel__action-buttons">
+            <a href="{{ url_for('lost') }}">
+              <button class="content-panel__button content-panel__button--lost">I LOST</button>
+            </a>
+            <a href="{{ url_for('found') }}">
+              <button class="content-panel__button content-panel__button--found">I FOUND</button>
+            </a>
+          </div>
+        </main>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

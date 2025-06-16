@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css"
+    href="{{ url_for('static',filename='css/edit_detail.css') }}">
+</head>
+<body>
+<div class="page-wrapper">
+<section id="section-header-container">
+  <header class="site-header">
+    <nav class="header-nav">
+      <a href="#" class="header-nav-item support-link">Support</a>
+      <h2 style="color: #FFFFFF; font-size: 19px; padding-left: 20px;">{{username}} </h2>
+      <img src="{{ url_for ('static',filename='images/Ellipse 2.svg') }}" alt="User Avatar" class="user-avatar">
+    </nav>
+  </header>
+</section>
+
+
+<section id="section-main">
+  <div class="main-content-area">
+    <aside class="sidebar">
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="sidebar-nav-item">
+            <a href="{{ url_for('home') }}" class="sidebar-nav-item">
+              <img src="{{ url_for('static', filename='images/2043.png_860 (1) 12.png') }}" alt="Home Icon" class="nav-icon">
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="{{ url_for('search') }}" class="sidebar-nav-item">
+              <img src="{{ url_for('static', filename='images/2043.png_860 (1) 12.png') }}" alt="Search Icon" class="nav-icon">
+              <span>Search</span>
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="{{ url_for('support') }}" class="sidebar-nav-item">
+              <img src="{{ url_for('static', filename='images/2043.png_860 (1) 12.png') }}" alt="Support Icon" class="nav-icon">
+              <span>Support</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer-link nav-item">
+        <a href="{{ url_for('homescreen') }}" class="sidebar-nav-item how-it-helps">
+          <img src="{{ url_for ('static',filename='images/Screenshot 2025-06-07 034101 1.png') }}" alt="How it helps icon" class="nav-icon-large">
+          <span>How It Helps</span>
+        </a>
+      </div>
+    </aside>
+
+    
+    <main class="form-content-wrapper">
+      <div class="form-container-outer">
+        <div class="form-container-inner">
+          <h1 class="form-title">Edit details of XYZ</h1>
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="description" class="form-label">Description</label>
+              <input type="text" id="description" name="description" class="form-input">
+            </div>
+            <div class="form-group">
+              <label for="location" class="form-label">Location</label>
+              <input type="text" id="location" name="location" class="form-input">
+            </div>
+            <div class="form-group">
+              <label for="reporter-email" class="form-label">Reporter’s Email</label>
+              <input type="email" id="reporter-email" name="reporter-email" class="form-input">
+            </div>
+            <div class="form-buttons">
+              <button type="submit" class="btn btn-back">Back to details</button>
+              <button type="submit" class="btn btn-update">Update</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+</section>
+</div>
+</body>
+</html>

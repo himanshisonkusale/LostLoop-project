@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(0deg, #c7e0f9 25.16%, #c7e0f9 37.63%, #c7e0f9 43.69%, #7fc8fd 52.07%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logout-container h1 {
+    color: #333;
+    font-size: 2rem;
+    text-align: center;
+}
