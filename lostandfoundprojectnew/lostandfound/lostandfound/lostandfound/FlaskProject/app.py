@@ -153,12 +153,10 @@ def item_details(item_id):
 
     url = url_for('item_details', item_id=item_id, _external=True)
     qr_code_img = generate_qr_code(url)
-
     lat = item.get('latitude', 22.7196)
     lng = item.get('longitude', 75.8577)
     user_email = session.get('user', 'Guest')
 
-    # Get Google Maps API key from environment
     GOOGLE_MAPS_API_KEY = os.environ.get("GOOGLE_MAPS_API_KEY")
 
     return render_template(
@@ -169,8 +167,9 @@ def item_details(item_id):
         longitude=lng,
         user=user_email,
         item_id=item_id,
-        maps_api_key=GOOGLE_MAPS_API_KEY  # 👈 pass to template
+        maps_api_key=GOOGLE_MAPS_API_KEY  # ✅ yeh line
     )
+
 
 
 @app.route('/report', methods=['GET', 'POST'])

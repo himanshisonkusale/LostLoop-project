@@ -4,7 +4,7 @@ services:
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app
-    rootDir: lostandfoundprojectnew/lostandfound/lostandfound/lostandfound/FlaskProject
+    
     envVars:
       - key: FLASK_ENV
         value: production
