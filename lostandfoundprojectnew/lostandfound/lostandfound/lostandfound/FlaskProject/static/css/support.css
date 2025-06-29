@@ -34,6 +34,9 @@ body {
   line-height: 25px;
   text-decoration: none;
   margin-right: 74px; 
+  position: relative;
+  z-index: 10;
+  pointer-events: all;
 }
 .user-name {
   color: #ffffff; 

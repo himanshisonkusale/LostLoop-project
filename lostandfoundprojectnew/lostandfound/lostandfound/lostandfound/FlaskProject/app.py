@@ -272,7 +272,6 @@ def delete_report(report_id):
 @app.route('/lost')
 def lost():
     return render_template('lost.html')
-
 @app.route('/support')
 def support():
     return render_template('support.html')
@@ -350,9 +349,6 @@ def chat(item_id):
 def logout():
     session.clear()
     return render_template('logout.html')
-
-
-
 
 
 if __name__ == '__main__':
