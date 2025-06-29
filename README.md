@@ -60,4 +60,3 @@ LostLoop is ideal for:
 
 - 🧠 **Matangi Sharma**  
   UI/UX Design – Screen Flow, Element Positioning, Aesthetic Styling 
-  DONE gtvttv
