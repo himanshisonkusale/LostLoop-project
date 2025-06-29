@@ -102,15 +102,20 @@
             </div>
             </article>
             <div class="map-wrapper">
-                <article class="location-map-card">
-                    <span class="location-map-text">Location Map</span>
-                    <!-- Optional: Google Maps iframe -->
-                    <iframe width="100%" height="300" style="border:0" loading="lazy" allowfullscreen
-                        referrerpolicy="no-referrer-when-downgrade"
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD8VyRQO0Yoft6pC5qNHjrs0XS2316t1hc&q={{ latitude }},{{ longitude }}">
-                    </iframe>
-                </article>
-            </div>
+    <article class="location-map-card">
+        <span class="location-map-text">Location Map</span>
+        <!-- Secure Google Maps iframe -->
+        <iframe
+            width="100%"
+            height="300"
+            style="border:0"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed/v1/place?key={{ maps_api_key }}&q={{ latitude }},{{ longitude }}">
+        </iframe>
+    </article>
+</div>
             </main>
 
         </div>
