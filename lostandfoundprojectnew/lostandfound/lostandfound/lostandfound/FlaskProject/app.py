@@ -348,17 +348,6 @@ def logout():
     session.clear()
     return render_template('logout.html')
 
-GOOGLE_MAPS_API_KEY = os.environ.get("GOOGLE_MAPS_API_KEY")
-return render_template(
-    'item_details.html',
-    item=item,
-    qr_code_img=qr_code_img,
-    latitude=lat,
-    longitude=lng,
-    user=user_email,
-    item_id=item_id,
-    maps_api_key=GOOGLE_MAPS_API_KEY  # ← ADD THIS LINE
-)    
 
 
 if __name__ == '__main__':
