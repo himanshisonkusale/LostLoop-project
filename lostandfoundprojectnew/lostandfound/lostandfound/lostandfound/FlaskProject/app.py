@@ -8,6 +8,10 @@ from datetime import datetime
 from werkzeug.utils import secure_filename
 import sqlite3
 from collections import namedtuple
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "fallback_secret_key")
@@ -138,30 +142,24 @@ def home():
         username=session.get('name')  
     )
 
-
 @app.route('/item/<int:item_id>')
 def item_details(item_id):
-    
     if 'user' not in session:
         return redirect(url_for('login'))
 
-   
     item = find_item(item_id)
     if not item:
         abort(404)
 
-    
     url = url_for('item_details', item_id=item_id, _external=True)
-
-    
     qr_code_img = generate_qr_code(url)
 
-    
     lat = item.get('latitude', 22.7196)
     lng = item.get('longitude', 75.8577)
-
-    
     user_email = session.get('user', 'Guest')
+
+    # Get Google Maps API key from environment
+    GOOGLE_MAPS_API_KEY = os.environ.get("GOOGLE_MAPS_API_KEY")
 
     return render_template(
         'item_details.html',
@@ -170,7 +168,8 @@ def item_details(item_id):
         latitude=lat,
         longitude=lng,
         user=user_email,
-        item_id=item_id
+        item_id=item_id,
+        maps_api_key=GOOGLE_MAPS_API_KEY  # 👈 pass to template
     )
 
 
@@ -349,7 +348,7 @@ def chat(item_id):
 def logout():
     session.clear()
     return render_template('logout.html')
-    
+
 GOOGLE_MAPS_API_KEY = os.environ.get("GOOGLE_MAPS_API_KEY")
 return render_template(
     'item_details.html',
