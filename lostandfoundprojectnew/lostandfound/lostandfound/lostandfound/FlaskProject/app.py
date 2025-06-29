@@ -10,7 +10,7 @@ import sqlite3
 from collections import namedtuple
 
 app = Flask(__name__)
-app.secret_key = "your_secret_key"
+app.secret_key = os.environ.get("FLASK_SECRET_KEY", "fallback_secret_key")
 
 UPLOAD_FOLDER = os.path.join(app.root_path, 'static', 'uploads')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
